@@ -15,3 +15,32 @@ p {
   color: red;
   min-height: 20px;
 }
+
+.user_info_members_container {
+  width: 800px;
+  height: auto;
+  margin: auto;
+}
+
+.AddMembersForm_Container {
+  width: 800px;
+  height: auto;
+  margin: auto;
+  display: flex;
+}
+
+.AddMembersForm_wrapper {
+  width: 50%;
+  min-height: 100px;
+}
+
+.MembersForm_wrapper {
+  width: 50%;
+  min-height: 100px;
+  margin: 10px 0 0 0;
+}
+.resultDisplay_container {
+  position: fixed;
+  display: inline-block;
+  top: 50%;
+}

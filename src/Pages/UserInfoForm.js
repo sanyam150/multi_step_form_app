@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../App.css';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
@@ -34,6 +34,11 @@ const UserInfoForm = () => {
     localStorage.setItem('userInformation', JSON.stringify(formData));
     navigate('/AddMembersForm');
   };
+
+  useEffect(() => {
+    localStorage.removeItem('userInformation');
+    localStorage.removeItem('membersInformation');
+  }, []);
 
   return (
     <>
